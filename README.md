@@ -17,3 +17,5 @@
 - react version - 15.4.1
 - react-router version - 3.0.0
 
+### **Bugs**
+- Timer keeps decrementing to - values, need to fix it. Shoud not go past 00:00.
