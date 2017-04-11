@@ -6,7 +6,7 @@ import './App.css';
 import {IndexLink, Link} from 'react-router';
 
 // importing custom components
-import StartStopButton from './components/StartStopButton';
+// import StartStopButton from './components/StartStopButton';
 
 class App extends Component {
     render() {
@@ -15,7 +15,7 @@ class App extends Component {
                 <div className="App">
                     <div className="App-header">
                       <img src={logo} className="App-logo" alt="logo" />
-                      <h2>Welcome to React</h2>
+                      <h2>Welcome to Pomodoro-In-React</h2>
                     </div>
                 </div>
 
@@ -25,7 +25,6 @@ class App extends Component {
                         {this.props.children}
                     </div>
 
-                    <StartStopButton/>
                     <ul className="pills">
                       <li><IndexLink to="/" activeClassName="active">Work</IndexLink></li>
                       <li><Link to="/shortBreak" activeClassName="active">Short Break</Link></li>

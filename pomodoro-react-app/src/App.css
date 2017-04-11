@@ -23,12 +23,12 @@ body{
 }
 
 .pomodoroApp{
-	padding-top: 5%;
+	padding-top: 6%;
 }
 
 ul.pills{
 	list-style: none;
-	padding-top: 10%;
+	padding-top: 2%;
 }
 
 ul.pills li {
@@ -40,12 +40,19 @@ ul.pills li a {
   	color: #222;
   	font-weight: bold;
   	text-decoration: none;
-  	padding: 2%;
+  	padding: 1%;
   	border: 1px solid #222;
   	border-radius: 4px;
-  	margin: 2%;
+  	margin: 1%;
 }
 
 .active {
   background-color: #CC7A6F;
+}
+
+.componentHeading{
+	font-size: 60px;
+	font-family: Arial;
+	font-weight: lighter;
+
 }

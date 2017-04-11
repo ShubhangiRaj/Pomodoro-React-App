@@ -4,7 +4,7 @@ class WorkClock extends Component{
     constructor(props){
         super(props);
         this.state={
-            date: new Date()
+            time: 1500
         };
     }
 
@@ -21,16 +21,23 @@ class WorkClock extends Component{
     }
 
     tick() {
+        let newState = this.state.time - 1;
         this.setState({
-            date: new Date()
+            time: newState
         });
     }
 
+    format(seconds) {
+        let mins = Math.floor(seconds % 3600 / 60);
+        let secs = Math.floor(seconds % 3600 % 60);
+        let timeFormated = (mins < 10 ? "0" : "") + mins + ":" + (secs < 10 ? "0" : "") + secs;
+        return timeFormated;
+    }
 
     render() {
         return (
             <div>
-               <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+               <h2 className="componentHeading">{this.format(this.state.time)}</h2>
             </div>
         );
     }
