@@ -9,11 +9,11 @@
 - ```Short Break``` sets up a timer for 5 mins
 - ```Long Break``` sets up a timer for 15 mins
 
-### **Coming Up**
+### **Coming Up:**
 - Browser notification when the timer expires
 - Start/Stop buttons to have more control on the timer
 
-### **Dependencies** 
+### **Dependencies:** 
 - react version - 15.4.1
 - react-router version - 3.0.0
 
